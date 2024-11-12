@@ -6,8 +6,8 @@ A modern web application for a coffee machine ordering system.
 
 ```bash
 # Install dependencies
-pnpm install
+npm install
 
 # Start development server
-pnpm dev
+npm dev
 ```
