@@ -1,6 +1,6 @@
 # Coffee website App
 
-A modern web application for a coffee ordering system.
+A modern web application for a coffee ordering system part of a bootcamp project for fullstack development.
 
 ## Setup
 
