@@ -150,7 +150,7 @@ app.get('/', (_req, res) => {
                     <div class="contact-info">
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>123 Coffee Street, Stockholm, Sweden</p>
+                            <p> Stockholm, Sweden</p>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-phone"></i>
