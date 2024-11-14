@@ -1,6 +1,6 @@
 # Coffee website App
 
-A modern web application for a coffee ordering system.
+A modern web application for a coffee ordering system part of a bootcamp project for fullstack development.
 
 ## Setup
 
@@ -11,8 +11,6 @@ npm install
 # Start development server
 npm dev
 ```
-# Coffee Machine App
-
 A modern web application for a coffee ordering system built with React, Node.js and MongoDB.
 
 ## Tech Stack
