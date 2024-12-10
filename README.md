@@ -2,6 +2,11 @@
 
 A modern web application for a coffee ordering system part of a bootcamp project for fullstack development.
 
+
+# first run the backend using docker to start the containers
+run the following the docker folder 
+
+docker-compose up -d 
 ## Setup
 
 ```bash
@@ -9,7 +14,7 @@ A modern web application for a coffee ordering system part of a bootcamp project
 npm install
 
 # Start development server
-npm dev
+npm run dev
 ```
 A modern web application for a coffee ordering system built with React, Node.js and MongoDB.
 
