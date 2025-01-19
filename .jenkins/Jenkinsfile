@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main',  // or 'master', depending on your default branch
+                    url: 'https://github.com/tukue/CafeAppWebsite.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            parallel {
+                stage('Client') {
+                    steps {
+                        dir('client') {
+                            bat 'npm install'
+                        }
+                    }
+                }
+                stage('Server') {
+                    steps {
+                        dir('server') {
+                            bat 'npm install'
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Start Docker') {
+            steps {
+                dir('docker') {
+                    bat 'docker-compose up -d'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            dir('docker') {
+                bat 'docker-compose down'
+            }
+            cleanWs()
+        }
+    }
+}
